@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("../db");
+const connectDB = require("./server/db");
 
 const app = express();
 
@@ -12,9 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api/projects", require("./routes/projects"));
-app.use("/api/auth", require("./routes/auth"));
-app.use("/api/upload", require("./routes/upload"));
+app.use("/api/projects", require("./server/routes/projects"));
+app.use("/api/auth", require("./server/routes/auth"));
+app.use("/api/upload", require("./server/routes/upload"));
 
 // Static folder (for images)
 app.use("/uploads", express.static("uploads"));

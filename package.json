@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon server.js",
+    "server": "cross-env NODE_CONFIG_DIR=./server/config nodemon server.js",
     "client": "npm start --prefix client",
     "start": "node server.js"
   },

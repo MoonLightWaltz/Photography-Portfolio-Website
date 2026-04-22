@@ -1,13 +1,9 @@
 import "./App.css";
+import { useEffect } from "react";
+import Nav from "./Components/Layout/Nav";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Josiahs Photography portfolio react site</p>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return <Nav />;
+};
 
 export default App;

@@ -1,4 +1,3 @@
 {
-  "mongoURI": "mongodb+srv://Josiah490:nZ9sRzszhF58z6tM@photographysitecluster.p65vzrp.mongodb.net/",
-  "PORT": 5000
+  "mongoURI": "mongodb+srv://Josiah490:nZ9sRzszhF58z6tM@photographysitecluster.p65vzrp.mongodb.net/"
 }
